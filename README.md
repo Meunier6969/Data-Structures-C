@@ -13,7 +13,9 @@ For more information, see [Academic Dishonesty](https://brennan.io/2016/03/29/di
 - Queues using array (`int`)
 
 ## 🔜 TODO
-- Binary Trees
+- Binary Trees (`int`)
+- `BT_deleteNode`, Breadth-first visit, and rotations
+- Add return values for most `void` functions
 - `SLL_addCellAtIndex()` in `simple_linked_list.c`
 
 ## 🆘 Notes
