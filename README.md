@@ -1,5 +1,5 @@
 # Data Structures in C
-This repo contains implementations in C of multiple data structures used at [EFREI](https://www.efrei.fr/).\
+This repository contains implementations in C of multiple data structures used at [EFREI](https://www.efrei.fr/).\
 The implentations presented here might slightly differ from what is precisely asked at EFREI.
 
 ## ⚠️ Warning
