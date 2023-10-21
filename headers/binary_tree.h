@@ -13,14 +13,16 @@ typedef struct bt_tree
 } bt_tree;
 
 bt_node* BT_createNode(int value);
+bt_tree BT_exampleTree();
 
 void BT_insertInOrder(bt_node *root, int value);
 bt_node* BT_searchNode(bt_node *root, int value);
-void BT_deleteNode(bt_node *node, int value);
+bt_node* BT_deleteNode(bt_node *node, int value);
 
 void BT_displayPostfix(bt_node* node);
 void BT_displayPrefix(bt_node* node);
 void BT_displayInfix(bt_node* node);
 
-int BT_heightOfTree(bt_node *root);
-int BT_isTreeEmpty(bt_node *tree);
+int BT_isTreeEmpty(bt_node *root);
+int BT_heightOfTree(bt_node *node);
+int BT_balanceFactor(bt_node* node);
