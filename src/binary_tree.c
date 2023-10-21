@@ -15,6 +15,21 @@ bt_node *BT_createNode(int value)
     return newNode;
 }
 
+bt_tree BT_exampleTree()
+{
+    bt_tree tree;
+    tree.root = BT_createNode(5);
+    BT_insertInOrder(tree.root, 3);
+    BT_insertInOrder(tree.root, 7);
+    BT_insertInOrder(tree.root, 2);
+    BT_insertInOrder(tree.root, 4);
+    BT_insertInOrder(tree.root, 6);
+    BT_insertInOrder(tree.root, 8);
+    BT_insertInOrder(tree.root, 1);
+    BT_insertInOrder(tree.root, 9);
+    return tree;
+}
+
 void BT_insertInOrder(bt_node *node, int value)
 {
     if (node == NULL)
@@ -58,16 +73,15 @@ bt_node* BT_searchNode(bt_node *node, int value)
     if (value > node->value)
         return BT_searchNode(node->right, value);
         
-    if (value == node->value)
-        return node;
+    return node;
 }
 
-void BT_deleteNode(bt_node *node, int value)
+bt_node* BT_deleteNode(bt_node *node, int value)
 {
     if (node == NULL)
-        return;
+        return node;
         
-    // Soon™️
+    // Please do it for me 🙏
 }
 
 void BT_displayPostfix(bt_node* node)
@@ -100,15 +114,20 @@ void BT_displayInfix(bt_node* node)
     BT_displayInfix(node->right);
 }
 
-int BT_heightOfTree(bt_node *root)
+int BT_isTreeEmpty(bt_node *root)
 {
-    if (root == NULL)
-        return 0;
-    
-    return 1 + fmax(BT_heightOfTree(root->left), BT_heightOfTree(root->right));
+    return (root == NULL);
 }
 
-int BT_isTreeEmpty(bt_node *tree)
+int BT_heightOfTree(bt_node *node)
 {
-    return (tree == NULL);
+    if (node == NULL)
+        return 0;
+    
+    return 1 + fmax(BT_heightOfTree(node->left), BT_heightOfTree(node->right));
+}
+
+int BT_balanceFactor(bt_node* node)
+{
+    return BT_heightOfTree(node->left) - BT_heightOfTree(node->right); 
 }
