@@ -11,10 +11,11 @@ For more information, see [Academic Dishonesty](https://brennan.io/2016/03/29/di
 - Double Linked List (`char*`)
 - Stacks using array (`float`)
 - Queues using array (`int`)
+- Binary Trees (`int`)
 
 ## 🔜 TODO
-- Binary Trees (`int`)
 - `BT_deleteNode`, Breadth-first visit, and rotations
+- `BT_isAVL`
 - Add return values for most `void` functions
 - `SLL_addCellAtIndex()` in `simple_linked_list.c`
 
