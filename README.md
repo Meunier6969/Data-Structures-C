@@ -3,8 +3,7 @@ This repository contains implementations in C of multiple data structures used a
 The implentations presented here might slightly differ from what is precisely asked at EFREI.
 
 ## ⚠️ Warning
-This code is provided for educational purpose only. You should not copy anything found here word-for-word, EFREI will find you. \
-For more information, see [Academic Dishonesty](https://brennan.io/2016/03/29/dishonesty/)
+This code is provided for educational purpose only. You should not copy anything found here word-for-word, EFREI will find you. 
 
 ## ✅ Implemented
 - Simple Linked List (`int`)
