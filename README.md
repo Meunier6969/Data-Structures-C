@@ -13,10 +13,12 @@ This code is provided for educational purpose only. You should not copy anything
 - Binary Trees (`int`)
 
 ## 🔜 TODO
-- `BT_deleteNode`, Breadth-first visit, and rotations
+- Queues with `first` and `last` index (`char`)
 - `BT_isAVL`
 - Add return values for most `void` functions
 - `SLL_addCellAtIndex()` in `simple_linked_list.c`
+- ~~`BT_deleteNode`, Breadth-first visit, and rotations~~
+    won't be doing rotations (and consequently deletion) due to their complexity.
 
 ## 🆘 Notes
 If you find any bugs, please feel free to let me know.\
